@@ -16,7 +16,7 @@
 <div class="bg-primary m-1 p-1 text-white"><h2>Book an Appointment</h2></div>
 
 <form class="m-1 p-1" asp-action="MakeBooking" method="POST">
-    <div asp-validation-summary="All" class="text-danger"></div>
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     <div class="form-group">
         <label asp-for="ClientName">Your name:</label>
         <div><span asp-validation-for="ClientName" class="text-danger"></span></div>
